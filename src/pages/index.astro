@@ -1,0 +1,35 @@
+---
+import Navbar from '../components/Navbar.astro'
+import HeroSection from '../components/HeroSection.astro'
+import TrendyPlants from '../components/TrendyPlants.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Breath Natureal</title>
+	</head>
+		<body class="bg-[#171F12]">
+		<section class="Hero_section ">
+			<Navbar/>
+			<HeroSection/>
+			<TrendyPlants/>
+		</main>
+	</body>
+</html>
+<style is:global>
+	:root {
+		
+	}
+	.Hero_section{
+		background-image: url('./nagy.png');
+		background-size: cover;
+		background-color: #171F12;	
+	}
+
+</style>
